@@ -6,7 +6,7 @@
   
   body {
     display: flex;
-    flex-direction: column; /* چینش عمودی */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -15,8 +15,8 @@
   
   .progress-container {
     display: flex;
-    align-items: center; /* مرکزچینی محتوا */
-    flex-wrap: wrap; /* برای سازگاری با اندازه‌های کوچک */
+    align-items: center; 
+    flex-wrap: wrap; 
   }
   
   .circle {
@@ -30,25 +30,25 @@
     color: white;
     font-size: 18px;
     font-weight: bold;
-    margin: 0 5px; /* فاصله بین دایره‌ها */
+    margin: 0 5px; 
   }
   
   .circle.next-active {
-    background-color: #2ecc71; /* رنگ سبز */
+    background-color: #2ecc71; 
   }
   
   .circle.prev-active {
-    background-color: #e74c3c; /* رنگ قرمز */
+    background-color: #e74c3c;
   }
   
   .line {
     width: 100px;
     height: 5px;
     background-color: #333;
-    flex-shrink: 0; /* جلوگیری از کوچک شدن خط */
+    flex-shrink: 0; 
   }
   
-  /* دکمه‌ها */
+
   .buttons {
     margin-top: 20px;
     display: flex;
@@ -67,10 +67,9 @@
   }
   
   button:hover {
-    background-color: #456d76; /* رنگ دکمه در حالت hover */
+    background-color: #456d76; 
   }
   
-  /* مدیا کوئری برای صفحه‌های کوچک‌تر */
   @media (max-width: 600px) {
     .circle {
         width: 40px;
@@ -79,7 +78,7 @@
     }
   
     .line {
-        width: 70px; /* کاهش عرض خط */
+        width: 70px; 
     }
   
     button {
@@ -96,7 +95,7 @@
     }
   
     .line {
-        width: 50px; /* کاهش بیشتر عرض خط */
+        width: 50px; 
     }
   
     button {
