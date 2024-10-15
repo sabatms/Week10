@@ -6,10 +6,10 @@ const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('prev'); 
 
 nextButton.addEventListener('click', () => {  
-    if (currentActive < circles.length - 1) {
-        currentActive++; 
-        updateCircles('next'); 
-    }
+if (currentActive < circles.length - 1) {
+  currentActive++; 
+   updateCircles('next'); 
+ }
 });
 
 prevButton.addEventListener('click', () => {
@@ -45,5 +45,5 @@ function updateCircles(action) {
                 }
             }
         }
-    });
+     });
 }
